@@ -22,9 +22,9 @@
                 <li class="layui-nav-item {{if equrl "/" .Path }}layui-this{{end}}"><a href="/">首页</a></li>
                 <li class="layui-nav-item {{if equrl "/message" .Path }}layui-this{{end}}"><a href="/message">留言</a>
                 </li>
-                <li class="layui-nav-item">
-                    <a href="https://github.com/jicg/liteblog" target="_blank">Github</a>
-                </li>
+{{/*                <li class="layui-nav-item">*/}}
+{{/*                    <a href="https://liteblog" target="_blank">Github</a>*/}}
+{{/*                </li>*/}}
             </ul>
         {{/*{{if .IsLogin}} # {{else}} /user {{end}}*/}}
             <a href="/user" style="color:#fff;max-width: 120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" class="personal pull-left">
@@ -42,9 +42,9 @@
         <li><a href="/">首页</a></li>
         <li><a href="/message">留言</a></li>
     {{/*<li><a href="/about">关于</a></li>*/}}
-        <li>
-            <a href="https://github.com/jicg/liteblog" target="_blank">Github</a>
-        </li>
+{{/*        <li>*/}}
+{{/*            <a href="https://liteblog" target="_blank">Github</a>*/}}
+{{/*        </li>*/}}
         <li>
             <a href="/user">
                 <i class="layui-icon {{if .IsLogin}}  {{else}} layui-icon-username {{end}} "

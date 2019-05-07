@@ -31,9 +31,9 @@
 
   "choco": {
     "description": "轻博客",
-    "project-url": "https://github.com/jicg/liteblog",
+    "project-url": "https://liteblog",
     "tags": "generate liteblog nuget",
-    "license-url": "https://github.com/jicg/liteblog/blob/master/LICENSE"
+    "license-url": "https://liteblog/blob/master/LICENSE"
   },
   "hooks": [
     {

@@ -2,9 +2,9 @@ package controllers
 
 import (
 	"github.com/astaxie/beego"
-	"github.com/jicg/liteblog/models"
+	"liteblog/models"
 	"errors"
-	"github.com/jicg/liteblog/syserrors"
+	"liteblog/syserrors"
 	"github.com/satori/go.uuid"
 )
 
@@ -31,6 +31,7 @@ func (ctx *BaseController) Prepare() {
 		ctx.IsLogin = true
 	}
 	ctx.Data["IsLogin"] = ctx.IsLogin
+	//为了实现子controller统一的方法
 	//判断子controller是否实现接口 NestPreparer
 	if app, ok := ctx.AppController.(NestPreparer); ok {
 		app.NestPrepare()

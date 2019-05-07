@@ -1,9 +1,9 @@
 package controllers
 
 import (
-	"github.com/jicg/liteblog/models"
+	"liteblog/models"
 	"time"
-	"github.com/jicg/liteblog/syserrors"
+	"liteblog/syserrors"
 	"github.com/jinzhu/gorm"
 	"github.com/PuerkitoBio/goquery"
 	"bytes"

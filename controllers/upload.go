@@ -2,11 +2,11 @@ package controllers
 
 import (
 	"github.com/astaxie/beego"
+	"liteblog/syserrors"
 	"os"
 	"path"
 	"strconv"
 	"time"
-	"github.com/jicg/liteblog/syserrors"
 	"mime/multipart"
 	"io/ioutil"
 	"encoding/json"

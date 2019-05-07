@@ -1,12 +1,12 @@
 package main
 
 import (
-	_ "github.com/jicg/liteblog/routers"
-	_ "github.com/jicg/liteblog/models"
+	_ "liteblog/routers"
+	_ "liteblog/models"
 	"github.com/astaxie/beego"
 	"strings"
 	"encoding/gob"
-	"github.com/jicg/liteblog/models"
+	"liteblog/models"
 	"os"
 	"github.com/astaxie/beego/logs"
 	"fmt"

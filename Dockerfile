@@ -1,6 +1,6 @@
 FROM golang:latest as builder
 MAINTAINER <284077319@qq.com>
-WORKDIR /go/src/github.com/jicg/liteblog
+WORKDIR /go/src/liteblog
 RUN go get github.com/tools/godep
 COPY . .
 #ENV CGO_ENABLED=0
@@ -12,10 +12,10 @@ FROM alpine as final
 #FROM debian:latest as final
 MAINTAINER <284077319@qq.com>
 #COPY --from=builder /etc/passwd /etc/passwd
-COPY --from=builder go/src/github.com/jicg/liteblog/liteblog /app/liteblog
-COPY --from=builder go/src/github.com/jicg/liteblog/views /app/views
-COPY --from=builder go/src/github.com/jicg/liteblog/static /app/static
-COPY --from=builder go/src/github.com/jicg/liteblog/conf /app/conf
+COPY --from=builder go/src/liteblog/liteblog /app/liteblog
+COPY --from=builder go/src/liteblog/views /app/views
+COPY --from=builder go/src/liteblog/static /app/static
+COPY --from=builder go/src/liteblog/conf /app/conf
 
 VOLUME /app/data
 VOLUME /app/assert

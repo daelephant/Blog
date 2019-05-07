@@ -2,7 +2,7 @@
 基于beego实现的轻聊版博客，目标：简单，易用，方便。
 
 ### 项目代码地址
-* [github地址](https://github.com/jicg/liteblog)
+* [github地址](https://liteblog)
 * [码云](https://gitee.com/jicg/liteblog)【镜像仓库】
 
 ### 演示地址 

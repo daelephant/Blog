@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"github.com/jicg/liteblog/syserrors"
+	"liteblog/syserrors"
 	"fmt"
 	"errors"
 	"time"
@@ -27,10 +27,10 @@ func (c *IndexController) Info() {
 
 // @router / [get]
 func (c *IndexController) Get() {
-	limit := 10;
+	limit := 10
 	page, err := c.GetInt("page", 1)
 	if err != nil || page < 1 {
-		page = 1;
+		page = 1
 	}
 	title := c.GetString("title", "")
 	if c.Dao==nil{
@@ -43,7 +43,7 @@ func (c *IndexController) Get() {
 	if ns != nil {
 		c.Data["notes"] = ns
 	}
-	var totpage int = 0;
+	var totpage int = 0
 	totcnt, _ := c.Dao.QueryNotesCount(title)
 	if totcnt%limit == 0 {
 		totpage = totcnt / limit
